@@ -1,0 +1,54 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Maple Mono NF;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: @background;
+    opacity: 0.75;
+}
+
+.modules-right {
+    margin-right: 15px;
+}
+
+#cpu {
+    margin-left: 20px;
+}
+
+#memory {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#custom-window-name {
+    margin-left: 10px;
+    color: @color9;
+}
+
+#workspaces button {
+    margin-left: 10px;
+    background: none;
+    font-family: Maple NF Regular;
+}
+
+#workspaces button.active {
+    color: @color9;
+}
+
+#custom-media {
+    margin-right: 20px;
+}
+
+#pulseaudio {
+    margin-left: 10px;
+}
+
+#clock {
+    margin-left: 10px;
+}
