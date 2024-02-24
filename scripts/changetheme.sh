@@ -18,16 +18,15 @@ wll=$wallpapersPath/$sel
 
 echo '$wllcache = '$wll > ~/.cache/wallpaper/wllcache.conf
 
-# wal -i $wll
+wal -si $wll
+#wal -aR
+#wpg -s $wll
 
 swww img $wll --transition-type none
-wpg -s $wll
 sleep 1
-wpg -a $wll
 cp ~/.cache/wal/colors-rofi.rasi ~/.config/rofi/colors/colors-rofi.rasi
 killall waybar
 waybar
-wal -aR
 
 #Other apps
 zathura-pywal
