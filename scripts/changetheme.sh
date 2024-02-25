@@ -1,7 +1,7 @@
 #!/bin/bash
 
-dir="$HOME/.config/rofi/launchers/type-1"
-theme='style-10'
+dir="$HOME/.config/rofi/launchers/type-4"
+theme='style-8'
 
 wallpapersPath=~/personal/wallpapers
 
@@ -19,14 +19,15 @@ wll=$wallpapersPath/$sel
 echo '$wllcache = '$wll > ~/.cache/wallpaper/wllcache.conf
 
 wal -si $wll
-#wal -aR
-#wpg -s $wll
 
 swww img $wll --transition-type none
 sleep 1
 cp ~/.cache/wal/colors-rofi.rasi ~/.config/rofi/colors/colors-rofi.rasi
 killall waybar
 waybar
+
+wpg -a $wll
+wpg -s $wll
 
 #Other apps
 zathura-pywal
